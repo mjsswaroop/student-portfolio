@@ -1,0 +1,296 @@
+
+html {
+ font-size: 62.5%;
+ /*overflow-x: hidden;*/
+}
+/*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+
+outline: none;
+scroll-behavior: smooth;
+}*/
+body {
+  background: rgb(255, 238, 206);
+  color:rgb(97, 53, 34)
+}
+.navbar a,
+.home .homecont .socialm a,
+.bx {
+    text-decoration: none; 
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: centre;
+   z-index: 100;
+    /*transition: .5s;*/
+}
+.header.sticky{
+    background: rgb(97, 53, 34);
+    box-shadow: 0 .1rem 1rem black;
+}
+.logo{
+    font-size: 2.5rem;
+    margin-right:auto;
+    color:rgb(97, 53, 34);
+    font-weight: 600;
+    text-decoration: none;
+    /*cursor: default;*/
+}
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color:rgb(255, 238, 206);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+.navbar a.active::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: rgb(255, 238, 206);
+}
+section{
+   min-height: 100vh;
+    padding: 10rem 7% 2rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    background: rgb(255, 238, 206);
+}
+.home .homecont{
+  max-width: 44rem;
+}
+.homecont h3{
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: .3;
+}
+.homecont h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+}
+.homecont p{
+    font-size: 1.6rem;
+}
+.homecont .socialm a{
+    margin-top: 1.4rem;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 4rem;
+ height: 4rem;
+ background: transparent;
+ border: .2rem solid rgb(93, 42, 23);
+ color: rgb(93, 42, 23);
+ border-radius: 50%;
+ box-shadow: 0 .2rem .5rem black;
+ font-size: 2rem;
+ margin: 5.5rem 1.5rem 3 rem 0;
+}
+.home .profcon{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 820px;
+    height: 695px;
+    overflow: hidden;
+}
+.home .profcon .profbox{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    left: 200;
+    width: 820px;
+    height: 820px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(93, 42, 23);
+}
+.home .profbox .prof{
+    position: absolute;
+    display: flex;
+    left: 0;
+    align-items: center;
+    background: rgb(255, 238, 206);
+    padding: 13px 0;
+}
+.home .prof i{
+    font-size: 3.8rem;
+}
+.home .prof h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.home .profcon .profbox .circle{
+    width: 460px;
+    height: 460px;
+    border: 3px solid rgb(93, 42, 23);
+    border-radius: 50%;
+}
+.home .profcon .overlay{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid rgb(93, 42, 23);
+    border-bottom: 384px solid rgb(93, 42, 23);
+    border-right: 384px solid rgb(93, 42, 23);
+    border-left: 384px solid transparent;
+}
+.homeimg img{
+ position: absolute;
+ right: 0px;
+ left: 960px;
+ bottom: 0px;
+ width: 600px;
+ height: auto;
+}
+span{
+    color: rgb(93, 42, 23) ;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: rgb(255, 238, 206);
+}
+.aboutimg img{
+  width: 40vw;
+}
+.headi{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.abtcnt h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.abtcnt h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.abtcnt p{
+    font-size: 1.6rem;
+    margin: .7rem 0 3rem;
+}
+.projects .prjcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.prjcon .prjbox{
+    flex: 1 1 30rem;
+    background: rgb(255, 238, 206);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem black;
+    text-align: center;
+    border-top: .6rem solid rgb(93, 42, 23);
+    border-bottom: .6rem solid rgb(93, 42, 23);
+}
+.prjcon .prjbox:hover{
+    box-shadow: 0 .1rem 2rem black;
+
+}
+.prjbox i{
+    font-size: 7rem;
+}
+.prjbox h3{
+     font-size: 3rem;
+}
+.prjbox p{
+    font-size: 2rem;
+    margin: 1rem 0 3rem;
+}
+.projects h2{
+    margin-bottom: 5rem;
+}
+.projects{
+    min-height: auto;
+    padding-bottom: 10rem;
+}
+.acdprof .table{
+    font-size: 3rem;
+    border:  5px solid rgb(93, 42, 23);
+}
+.table{
+    box-shadow: 0 .1rem .5rem solid black;
+}
+.acdprof h4{
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.acdprof ul{
+    font-size: 3rem;
+}
+.contact .btn{
+    color: rgb(255, 238, 206)  ;
+    background: rgb(93, 42, 23);
+    font-size: 2rem;
+}
+.contact h2{
+  margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+.contact form .inpbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .inpbox input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem solid black;
+}
+.contact form .inpbox input{ 
+    width: 49%;
+
+}
+.contact{
+    background: rgb(255, 238, 206);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: rgb(93, 42, 23);
+    color: rgb(255, 238, 206);
+    font-size: 1.6rem;
+}
+.footericon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: rgb(255, 238, 206);
+    border-radius: .8rem;
+}
